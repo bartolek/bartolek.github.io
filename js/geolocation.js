@@ -11,16 +11,23 @@ if ("geolocation" in navigator) {
     );
 
     function setCurrentPosition(position) {
-      //   document.querySelector(".accuracy").innerHTML = position.coords.accuracy;
-      //   document.querySelector(".altitude").innerHTML = position.coords.altitude;
-      //   document.querySelector(".altitudeAccuracy").innerHTML =
-      //     position.coords.altitudeAccuracy;
-      //   document.querySelector(".heading").innerHTML = position.coords.heading;
-      //   document.querySelector(".latitude").innerHTML = position.coords.latitude;
-      //   document.querySelector(".longitude").innerHTML =
-      //     position.coords.longitude;
-      //   document.querySelector(".speed").innerHTML = position.coords.speed;
-      console.log(position);
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+      var mapOptions = {
+        center: [lat, lng],
+        zoom: 10,
+      };
+
+      // Creating a map object
+      var map = new L.map("map", mapOptions);
+
+      // Creating a Layer object
+      var layer = new L.TileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      );
+
+      // Adding layer to the map
+      map.addLayer(layer);
     }
 
     function positionError(error) {
