@@ -4,14 +4,14 @@
     "start_url": "/?home=true",
     "icons:": [
         {
-            "src": "logo.png",
+            "src": "icon-192x192.png",
             "type": "image/png",
-            "sizes": "112x112"
+            "sizes": "192x192"
         },
         {
-            "src": "logo56.png",
+            "src": "icon-256x256.png",
             "type": "image/png",
-            "sizes": "56x56"
+            "sizes": "256x256"
         }
     ],
     "theme_color": "#000000",
