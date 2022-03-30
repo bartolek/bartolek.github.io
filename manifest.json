@@ -1,21 +1,14 @@
 {
-    "name": "Progressive Web App",
-    "short_name": "PWA",
-    "start_url": "/?home=true",
-    "icons:": [
-        {
-            "src": "icon-384x384.png",
-            "type": "image/png",
-            "sizes": "384x384"
-        },
-        {
-            "src": "icon-512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        }
-    ],
-    "theme_color": "#000000",
-    "background_color": "#FFFFFF",
-    "display": "fullscreen",
-    "orientation": "portrait"
+  "name": "Hello World",
+  "short_name": "Hello",
+  "icons": [{
+      "src": "images/hello-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white"
 }
