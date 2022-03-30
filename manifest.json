@@ -1,0 +1,21 @@
+{
+    "name": "Progressive Web App",
+    "short_name": "PWA",
+    "start_url": "/?home=true",
+    "icons:": [
+        {
+            "src": "logo.png",
+            "type": "image/png",
+            "sizes": "112x112"
+        },
+        {
+            "src": "logo56.png",
+            "type": "image/png",
+            "sizes": "56x56"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
