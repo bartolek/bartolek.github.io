@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
+  "name": "MRP",
+  "short_name": "MRP",
   "icons": [{
       "src": "images/hello-icon-512.png",
       "sizes": "512x512",
