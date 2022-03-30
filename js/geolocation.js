@@ -13,13 +13,9 @@ if ("geolocation" in navigator) {
     function setCurrentPosition(position) {
       const lat = position.coords.latitude;
       const lng = position.coords.longitude;
-      var mapOptions = {
-        center: [lat, lng],
-        zoom: 10,
-      };
 
       // Creating a map object
-      var map = new L.map("map", mapOptions);
+      var map = new L.map("map").setView([lat, lng], 10);
 
       // Creating a Layer object
       var layer = new L.TileLayer(
